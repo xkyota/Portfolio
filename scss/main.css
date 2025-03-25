@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+/* _reset.scss */
+/* Box sizing reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements */
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Set core body defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  -webkit-text-decoration-skip: ink;
+          text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove animations and transitions for people who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header {
+  width: 1110px;
+  height: 70px;
+  flex-shrink: 0;
+  border-radius: 0px 0px 8px 8px;
+  background: #1b1b1b;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 95px;
+  padding-right: 95px;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .links__list {
+  display: flex;
+  align-items: center;
+  gap: 70px;
+}
+.nav-bar .links__list .links__item {
+  color: #9c9c9c;
+  font-family: "IBM Plex Mono", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.14px;
+}
+.nav-bar .links__list .links__item:hover {
+  color: #cccccc;
+}
+
+.section__hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 920px;
+  margin: 0 auto;
+  margin-top: 80px;
+}
+
+.hero__text {
+  width: 437px;
+  padding-top: 48px;
+}
+.hero__text .my__name {
+  color: #fff;
+  font-family: "Raleway", serif;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  margin-bottom: 20px;
+}
+.hero__text .my__desc {
+  color: #9c9c9c;
+  font-family: "IBM Plex Mono", serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+}
+
+.my__photo {
+  border-radius: 50%;
+}
+
+.cv__download {
+  display: flex;
+  padding: 21px 64px;
+  align-items: center;
+  gap: 10px;
+  border-radius: 4px;
+  border: 1px solid #62ba1b;
+  background: #3f8e00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.5);
+  margin-top: 30px;
+  width: 265px;
+}
+.cv__download .cv__link {
+  color: #fff;
+  font-family: "IBM Plex Mono", serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.black__bg {
+  background: #080808;
+  height: 100vh;
+  flex-shrink: 0;
+}/*# sourceMappingURL=main.css.map */
